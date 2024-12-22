@@ -21,7 +21,7 @@ body
     height: 100%;
     width: 100%;
     font-size: 100%;
-    background-color: var(--bs-primary);
+    background-color: #191B23;
 }
 
 :root 
