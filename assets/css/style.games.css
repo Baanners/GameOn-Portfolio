@@ -1,0 +1,373 @@
+@import 'style.root.css';
+
+.games {
+    padding: 60px 0;
+}
+#games .container * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#games .container html, body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    color: #adb5bd;
+}
+
+#games .container {
+    display: flex;
+    flex-direction: row;
+    height: 70vh;
+    padding: 10px 0;
+}
+
+#games .container .expanded-content {
+    padding: 20px 0;
+}
+#games .container .collapsed-content {
+    height: 10%;
+    padding: 0;
+}
+#games .container .lower-body button {
+    margin-top: 30px;
+    padding: 5px 10px;
+}
+
+#games .container .lower-body button {
+    margin-top: 30px;
+    padding: 5px 10px;
+}
+
+
+.choice {
+    width: 60%;
+    height: 70%; 
+    box-sizing: border-box;
+    padding: 0;
+    overflow: hidden;
+    transition: flex 0.2s; 
+    border-radius: 3px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, z-index 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+}
+
+.card.clicked {
+    z-index: 10;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.8);
+    transform: scale(1.1);
+}
+
+.upper-body {
+    flex: 2;
+    background-size: cover;
+    background-position: center;
+    height: 60%;
+}
+
+.lower-body {
+    display: inline-block;
+    padding: 10px 20px;
+    flex: 1;
+    background-color: #191B23;
+    padding: 15px;
+    color: #fff;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    border-top: 2px solid #444;
+    min-height: 200px; 
+}
+.card-description {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #adb5bd;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.card-text {
+    padding: 10px 0;
+    font-size: 0.95rem;
+    color: #adb5bd; 
+    line-height: 1.5;
+    display: block;
+    letter-spacing: 1px;
+}
+
+.lower-body button {
+    display: inline-block;
+    background-color: #adb5bd;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.lower-body button:hover {
+    background-color: #98a5a9;
+    transform: scale(1.05);
+}
+
+.lower-body .collapsed-content button {
+    border-radius: 90%;
+}
+
+.lower-body .btn-outline-light {
+    background: none;
+    border: 2px solid #adb5bd; 
+    color: #adb5bd;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.lower-body .btn-outline-light:hover {
+    background: #adb5bd;
+    color: #fff;
+    border-color: #98a5a9;
+    transform: scale(1.05);
+}
+
+
+.collapsed-content {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    margin: 0;
+    display: block;
+}
+
+.expanded-content {
+    opacity: 0;
+    display: block;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.card.clicked .expanded-content {
+    opacity: 1;
+    display: block;
+}
+
+.card.clicked .collapsed-content {
+    opacity: 0;
+    display: none;
+}
+
+.card.expanded .collapsed-content {
+    display: none;
+}
+
+.card.expanded .expanded-content {
+    display: block;
+}
+
+.card.clicked .upper-body {
+    height: 100%;
+}
+
+
+.expand {
+    width: 70%; 
+}
+
+.unset {
+    width: 100%; 
+    color: black !important;
+    background-color: #ddd !important;
+}
+
+.small {
+    width: 20%; 
+    background-color: #ddd !important;
+}
+
+.small > div {
+    opacity: 1;
+}
+
+.unset > div > p {
+    opacity: 0;
+}
+
+.expand > div {
+    transition-delay: 400ms;
+    opacity: 1;
+}
+
+.image-card {
+    background-size: cover;
+    background-position: center;
+}
+
+.image1 {
+    background-image: url('../img/highlights/cf-lights.jpg');
+}
+
+.image2 {
+    background-image: url('../img/highlights/lol-lights.jpg'); 
+}
+
+.image3 {
+    background-image: url('../img/highlights/valo-ace.jpg'); 
+}
+
+.image4 {
+    background-image: url('../img/highlights/cod-lights.jpg'); 
+    background-size: 600px;
+}
+
+.image5 {
+    background-image: url('../img/highlights/coc-lights.jpg'); 
+}
+
+.border-black {
+    border: 2px solid black;
+}
+
+
+@media (max-width: 1200px) {
+    .games {
+        padding: 260px 0;
+    }
+    #games .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+        height: auto;
+        padding: 10px 0;
+        gap: 15px;
+    }
+
+    .card {
+        width: 90%; 
+        max-width: 500px; 
+        margin: 0 auto;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .image-card {
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .lower-body {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .collapsed-content,
+    .expanded-content {
+        text-align: center;
+    }
+
+    .card-description {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .lower-body button {
+        font-size: 0.8rem;
+        padding: 8px 15px;
+    }
+
+    .upper-body {
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card.clicked .upper-body {
+        height: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .image-card {
+        width: 100%;
+        height: 400px; /* Ensure a visible height */
+        background-size: cover;
+        background-position: center;
+        border-radius: 8px;
+        margin-bottom: 10px; /* Add spacing if needed */
+    }
+
+    .lower-body {
+        height: 20%;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .upper-body {
+        display: none; /* Hide upper-body to avoid redundancy */
+    }
+
+    .expanded-content p {
+        font-size: 0.9rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .card-description {
+        font-size: 0.8rem;
+        margin-top: 40px;
+    }
+
+    .expanded-content p {
+        font-size: 0.8rem;
+    }
+
+    .lower-body button {
+        font-size: 0.6rem;
+        padding: 5px 10px;
+    }
+
+    .image-card {
+        height: 150px;
+    }
+}

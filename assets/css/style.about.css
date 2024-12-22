@@ -1,0 +1,249 @@
+@import 'style.root.css';
+@import "/node_modules/bootstrap/dist/css/bootstrap.css";
+
+.btn {
+    background-color: black;
+    color: #1f456b;
+}
+#about {
+    background-color: #191B23; 
+    padding: 60px 5px;
+}
+
+#about h6, #about h2, #about p, span {
+    color: #adb5bd; 
+}
+p span {
+    color: cadetblue;
+}
+.text-card {
+    border: black 3px solid;
+    box-shadow: 15px 15px 17px rgb(255, 255, 255, 0); 
+    border-radius: 8px;
+    color: #adb5bd;
+    word-spacing: 2px;
+}
+
+.text-card h6 {
+    color: #00bcd4;
+    margin-bottom: 10px;
+}
+      
+.text-card h2 {
+    text-align: left;
+}
+
+.text-card p {
+    text-align: left;
+    line-height: 1.6;
+}
+
+.image-container {
+    margin-bottom: 175px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-card {
+    box-shadow: 25px 45px 2px 2px rgb(19, 19, 19); 
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    max-width: 500px; 
+}
+
+.image-container img {
+    width: 100%;  
+    height: auto;  
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.social-icons {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.social-logo {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.social-logo:hover {
+    transform: scale(1.1);
+}
+
+.status-location {
+    padding-top: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.status-logo {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.fade-in {
+    animation: fade-in 0.5s ease-in-out;
+    }
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1040px) {
+    #about {
+        background-color: #191B23; 
+        padding: 120px 5px;
+    }
+    .row {
+        flex-direction: column-reverse; 
+        align-items: center;
+    }
+
+    .image-card {
+        margin-bottom: 40px; 
+        width: 80%;
+        box-shadow: 15px 215px 2px 16px  rgb(19, 19, 19); 
+        border-radius: 10px;
+    }
+
+    .image-container img {  
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .col-lg-6 {
+        text-align: center;
+    }
+
+    .text-card {
+        padding: 20px; 
+        text-align: center;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px; 
+    }
+
+    .status-location {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; 
+    }
+
+    .status-logo {
+        width: 30px;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 769px) {
+    #about {
+        background-color: #191B23; 
+        padding: 160px 5px;
+    }
+    .row {
+        flex-direction: column-reverse; 
+        align-items: center;
+    }
+
+    .image-card {
+        width: 70%; 
+    }
+
+    .image-container img {
+        width: 100%;  
+        border-radius: 10px;
+    }
+
+    .col-lg-6 {
+        text-align: center;
+    }
+
+    .text-card {
+        box-shadow: 15px 15px 17px rgb(255, 255, 255, 0); 
+        padding: 15px;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .status-location {
+        text-align: center;
+        gap: 8px;
+    }
+
+    .btn-dark {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 590px) {
+    .row {
+        flex-direction: column-reverse; 
+        align-items: center;
+    }
+
+    .image-card {
+        width: 60%; 
+        margin-bottom: 20px; 
+    }
+
+    .image-container img {
+        border-radius: 10px;
+        width: 100%;  
+    }
+
+    .col-lg-6 {
+        text-align: center; 
+    }
+
+    .text-card {
+        padding: 10px;
+    }
+
+    .status-location {
+        text-align: center;
+        gap: 5px;
+    }
+
+    .status-logo {
+        width: 25px;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .btn-dark {
+        margin-top: 15px;
+    }
+}

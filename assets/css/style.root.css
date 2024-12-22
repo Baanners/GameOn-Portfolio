@@ -1,0 +1,55 @@
+@import url(/node_modules/bootstrap/dist/css/bootstrap.css);
+
+*
+{
+    /* Spacing Reset */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+html 
+{
+	width: 100%; 
+	height: 100%;
+}
+
+body
+{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    background-color: var(--bs-primary);
+}
+
+:root 
+{
+
+    /* COLORS */
+    --bs-bg-primary: #131313;
+    --bs-bg-secondary: #191B23;
+    --bs-bg-nav: #131313;
+
+    
+
+    /* BREAKPOINTS */
+    --bs-breakpoint-phone: 490px;
+    --bs-breakpoint-tablet: 768px;
+    --bs-breakpoint-desktop: 1040px;
+    --bs-breakpoint-max: 1440px;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(50%);
+    transition: all 0.5s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}

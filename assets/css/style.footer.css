@@ -1,0 +1,200 @@
+@import 'style.root.css';
+
+#footer-container * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#footer-container html, body {
+    height: 100%; 
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    color: #adb5bd;
+}
+.h2 span {
+    color: cadetblue;
+}
+
+.footer-container {
+    margin-top: auto; 
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.socials {
+    background-color: #191B23;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.socials .social-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #adb5bd;
+}
+
+.socials .social-text {
+    margin-bottom: 10px;
+}
+.socials .social-text span{
+    color: #adb5bd;
+}
+.socials a {
+    color: #adb5bd;
+    font-size: 1.5rem;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.socials a:hover {
+    color: #00bcd4;
+    transform: scale(1.2);
+}
+
+.bottom-footer {
+    background-color: #131313;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.bottom-footer .footer-bottom-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #adb5bd;
+    font-size: 1rem;
+}
+
+.bottom-footer p {
+    margin: 0;
+}
+
+.footer-content {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+textarea {
+    height: 150px;
+    max-height: 250px;
+}
+
+.left-section {
+    flex: 1;
+    max-width: 500px;
+}
+
+.left-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.left-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.left-section p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.socials .social-icons a img {
+    width: 40px; /* Set the width of the icons */
+    height: 40px; /* Set the height of the icons */
+    object-fit: contain; /* Ensures the aspect ratio is maintained */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    margin: 0 10px; /* Add spacing between icons */
+}
+
+.socials .social-icons a:hover img {
+    transform: scale(1.2); /* Slightly enlarge icon on hover */
+    opacity: 0.8; /* Dim the icon slightly for effect */
+}
+
+.right-section {
+    flex: 1;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.right-section form input,
+.right-section form textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffffad;
+    color: #131313;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.right-section form button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #6d6d6d;
+    background-color: #ffffffad; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.right-section form button:hover {
+    background-color: #131313;
+}
+
+.line-1 {
+    border: 1px solid white;
+    width: 5%;
+    margin: 30px 0;
+}
+
+@media (max-width: 768px) {
+    .socials .social-icons a img {
+        width: 30px; /* Adjust the size for smaller screens */
+        height: 30px;
+    }
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left-section,
+    .right-section {
+        max-width: 100%;
+    }
+
+    .socials .social-container {
+        flex-direction: column;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
+

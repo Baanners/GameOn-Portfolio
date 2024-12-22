@@ -1,0 +1,36 @@
+@import 'style.root.css';
+
+
+.nav-bg {
+    background-color: #131313; 
+    transition: background-color 0.3s, box-shadow 0.3s; 
+}
+
+
+@media (max-width: 1040px) {
+    .nav-bg {
+        background-color: #131313; 
+    }
+
+    .nav-item a {
+        font-size: 0.9rem; 
+    }
+
+    .navbar-brand {
+        font-size: 1.25rem; 
+    }
+}
+
+@media (max-width: 769px) {
+    .nav-bg {
+        background-color: #131313; 
+    }
+
+    .nav-item a {
+        font-size: 0.7rem; 
+    }
+
+    .navbar-brand {
+        font-size: 1rem; 
+    }
+}
